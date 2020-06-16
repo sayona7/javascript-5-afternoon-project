@@ -22,14 +22,13 @@ function outer() {
   Invoke outer saving the return value into another variable called 'inner'.
 */
   
-// Code Here
+const inner = outer();
 
 
 
 //Once you do that, invoke inner.
 
-//Code Here
-
+inner();
 
 
 ////////// PROBLEM 2 //////////
