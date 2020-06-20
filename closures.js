@@ -104,10 +104,10 @@ function counterFactory(value) {
 }
 
 counter = counterFactory(10);
-counter.inc() // 11
-// counter.inc() // 12
-// counter.inc() // 13
-// counter.dec() // 12
+// counter.inc() // 11
+// // counter.inc() // 12
+// // counter.inc() // 13
+// // counter.dec() // 12
 
 
 
@@ -121,11 +121,13 @@ counter.inc() // 11
 
 function motivation( firstname, lastname ) {
   var welcomeText = "You're doing awesome, keep it up";
+  
 
-  // code message function here.
+  let message = function () {
+    return `You're doing awesome, keep it up ${firstname} ${lastname}.`
+  }
 
-  //Uncommment this to return the value of your message function
-  //return message;
+  return message;
 }
 
 var greeting = motivation('Billy', 'Bob'); // 'You're doing awesome keep it up Billy Bob.
