@@ -176,7 +176,12 @@ function secretNumber() {
   var secret = 143;
 
   return {
-    // Code here
+    addToSecret: function (par) {
+      return secret = secret + par;
+    },
+    takeAwayFromSecret: function (par) {
+      return secret = secret - par;
+    }
   };
 }
 
