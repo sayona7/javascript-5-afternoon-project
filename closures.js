@@ -121,7 +121,7 @@ counter = counterFactory(10);
 
 function motivation( firstname, lastname ) {
   var welcomeText = "You're doing awesome, keep it up";
-  
+
 
   let message = function () {
     return `You're doing awesome, keep it up ${firstname} ${lastname}.`
@@ -155,11 +155,13 @@ var module = (function() {
   // Anything that is being returned is made public and can be invoked from
   // outside our lexical scope
   return {
-    // Code here.
+    publicMethod: function () {
+      return privateMethod(this.person);
+    }
   };
 })();
 
-
+module.publicMethod();
 
 ////////// PROBLEM 7 //////////
 
