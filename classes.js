@@ -64,7 +64,17 @@ class Manager extends Employee {
 		super();
 		this.reports = reports;
 	}
+
+	hire(employee) {
+		this.reports.push(employee);
+	}
+
+	fire(index) {
+		this.report.splice(index, i);
+	}
 }
+
+Manager();
 
 
 ////////// PROBLEM 3 //////////
